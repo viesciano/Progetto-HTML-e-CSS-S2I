@@ -245,6 +245,7 @@ li:hover {
     margin-top: 1vw;
     width: 70vw;
     height: 1px;
+    background-color: #222831;
 }
 
 figure {
@@ -335,8 +336,8 @@ img {
 
     .des1 {
         position:relative;
-        top:40px;
-        left:10px;
+        top:100px;
+        left:130px;
     }
 
     .im2 {
@@ -351,8 +352,8 @@ img {
 
     .des2 {
         position:relative;
-        top:100px;
-        left:-138px;
+        top:37px;
+        left:-140px;
     }
 
 
@@ -392,7 +393,7 @@ img {
     
     .des3 {
         position:relative;
-        bottom:47px;
-        left:-7px;
+        bottom:48px;
+        right: 20px;
 }
 }
