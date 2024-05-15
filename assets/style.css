@@ -120,12 +120,9 @@
 /*Body*/
 
 body {
-display:block;
 background-color: #e3e3e3;
-height: 6000px;
+
 color: #222831;
-justify-content: flex-start;
-align-items: flex-start;
 }
 
 .logo-img {
@@ -145,11 +142,10 @@ align-items: flex-start;
 }
 
 .main {
-height: 6000px;
+
 width:100%;
 margin-top: 3vw;
 display: inline-block;
-flex-direction: row;
 
 
 }
@@ -165,7 +161,8 @@ flex-direction: row;
     padding: 0;
     margin: 0;
     margin-bottom: 1vw;
-    justify-content: center;  
+    justify-content: center;
+    box-shadow: 0px 1px 4px 0px  #222831;
 }
 
 a {
@@ -193,17 +190,6 @@ li {
     
 
 }
-
-/*bu  li {
-    display:flex;
-    padding-right: 17px;
-    padding-left: 17px;
-    transition: color 0.3s;
-    transition-timing-function: ease;
-    box-shadow: 0px 7px 6px -9.5px #3c4245;
-       
-}
-*/
 
 .FL {
     color: #f2f9f1;
@@ -236,44 +222,89 @@ li:hover {
 .gallery-container {
 
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
-margin:auto;
-margin-top:5vw;
-width: 90vw;
-height: 600px;
+grid-template-columns: 1fr;
+justify-content: center;
+margin :auto;
+margin-top: 5vw;
+width: 70vw;
+height: 70vw;
 background-color: #5c715e;
 }
 
-
-
-
-
-
-
-/*Media Query*/
-
-@media screen and (min-width: 568px) {
-
-ul {
-    flex-direction: row;
-}
-.navbut {
-    width: 15vw;
-}
-}
-
-/*masonry*/
-
-.gallery-container {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-count: 1;
-    column-gap: 20px 20px;
-   }
    
 figure {
+    display: grid;
+    justify-content: center;
+    margin:auto;
+    padding-top: 2vw;
     margin: 0;
+}
+
+img {
+
     display: inline-block;
-    margin-bottom: 0px;
-    width: 100%;
+    max-width: 80vw;
+    border-radius: 1.3vw;
+
    }
+
+
+   /*Media Query*/
+
+@media screen and (min-width: 678px) {
+
+    ul {
+        flex-direction: row;
+    }
+    .navbut {
+        width: 15vw;
+    }
+    .gallery-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items:start;
+        max-width: 70vw;
+        height: 400px;
+        background-color: #5c715e;
+        }
+
+            
+        .im1 {
+            max-height: 600px;
+            align-self: end;
+            justify-content: end;
+        }
+
+        .im2 {
+            align-self: start;
+            justify-content: center;
+        }
+
+        .im3 {
+            justify-content: start;
+            align-self: center;
+         }
+        .im4 {
+            justify-content: end;
+            align-self: start;
+        }
+        .im5 {
+            justify-content: center;
+            align-self: start;
+        }
+        .im6 {
+            justify-content: start;
+            align-self: start;
+            
+        }
+
+
+        img {
+
+            display: inline-block;
+            max-width: 220px;
+            max-height: 300px;
+            margin: 0;
+           }
+        }
