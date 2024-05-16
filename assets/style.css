@@ -126,7 +126,7 @@ body {
 
 .logo-img {
     display: block;
-    width: 14vw;
+    width: 26vw;
     margin-left: 10vw;
     margin-bottom: 1vw;
     min-width: 100px;
@@ -136,14 +136,16 @@ body {
 
 
 .logo-img:hover {
-    width: 16vw;
+    width: 28vw;
 
 }
 
 .main {
-
     width: 100%;
     margin-top: 0.5vw;
+    height: 100%;
+    margin-bottom: 1px;
+    background-color: #e3e3e3;
     
    
 }
@@ -152,13 +154,13 @@ body {
 .des2,
 .des3 {
     color:#5c715e;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 0;
     
 }
 
 .des1 {
-    text-align: start;
+    text-align: end;
     
 }
 
@@ -192,7 +194,7 @@ a {
 
 ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: 0vw;
     margin: 0;
@@ -241,16 +243,18 @@ li:hover {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    align-content: start;
     margin: auto;
     margin-top: 1vw;
     width: 70vw;
-    height: 1px;
-    background-color: #222831;
+    height: 1900px;
+    background-color: #e3e3e3;
+    
 }
 
 figure {
     display: grid;
-    margin:auto;
+    margin: auto;
 }
 
 img {
@@ -258,29 +262,33 @@ img {
     margin: auto;
     margin: 1vw;
     max-width: 80vw;
-    max-height: 50vw;
+    max-height: 45vw;
     border-radius: 3vw;
 }
 
 .im3 {
     position: absolute;
     margin: auto;
-    right: 1px;
-    left: 1px;
-    max-width: 85vw;
-    max-height: 85vw;
+    right: 98px;
+    top: 200px;
+    max-width: 80vw;
+    max-height: 80vw;
     z-index: 2;
 
 }
 
 .im4 {
-    justify-content: end;
-    align-items: center;
+    position:relative;
+    display:none;
+
+    
+    
 }
 
 .im5 {
-    align-items: center;
-    justify-content: center;
+    position:relative;
+    right:70px;
+    display:none;
 }
 
 /*Media Query*/
@@ -291,12 +299,21 @@ img {
         flex-direction: row;
     }
 
-    .navbar-top {
+.des1,
+.des2,
+.des3 {
+    
         margin-bottom: 0;
+        font-size: 1.3rem;
     }
 
     .navbut {
         width: 15vw;
+    }
+
+    .main {
+        display:block;
+        margin:auto;
     }
 
     .gallery-container {
@@ -304,11 +321,12 @@ img {
         position:relative;
         bottom:50px;
         grid-template-columns: repeat(2, 350px);
-        grid-template-rows: 1fr 1fr 1fr;
         justify-content: center;
+        align-content: start;
         column-gap: 0px;
         width: 70vw;
-        margin-top: 0;
+        height: 730px;
+        margin:auto;
 
     }
 
@@ -336,15 +354,16 @@ img {
 
     .des1 {
         position:relative;
-        top:100px;
-        left:130px;
+        text-align: start;
+        top:99px;
+        left:100px;
     }
 
     .im2 {
         position:relative;
         top:50px;
         justify-content: end;
-        align-self: end;
+        align-self: center;
         max-height: 250px;
         max-width: 250px;
 
@@ -352,16 +371,17 @@ img {
 
     .des2 {
         position:relative;
-        top:37px;
+        top:25px;
         left:-140px;
     }
 
 
 
     .im3 {
-        position: absolute;
-        align-self: center;
+        position: relative;
         justify-content: center;
+        left: 160px;
+        top: -100px;
         z-index: 2;
         max-height: 450px;
         max-width: 450px;
@@ -369,31 +389,38 @@ img {
     }
 
     .im4 {
+        position:relative;
+        top: 10px;
+        right: 25px;
         max-height: 250px;
         max-width: 250px;
+        display:block; /*need due to "none" on mobile v.*/
+       
 
     }
 
     .im5 {
         position: relative;
-        left:120px;
-        bottom:85px;
+        left:10px;
+        bottom:325px;
         max-height: 250px;
         max-width: 250px;
+        display: block; /*need due to "none" on mobile v.*/
     }
 
     .im6 {
         position:relative;
         justify-content: start;
         align-self: center;
-        bottom:25px;
+        bottom: 180px;
+        left: -100px;
         max-height: 250px;
         max-width: 250px;
     }
     
     .des3 {
         position:relative;
-        bottom:48px;
-        right: 20px;
+        bottom:205px;
+        right: 117px;
 }
 }
