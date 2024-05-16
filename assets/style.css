@@ -262,7 +262,7 @@ li:hover {
     margin-top: 1vw;
     width: 70vw;
     height: 490px;
-    background-color: #222831;
+    
     
     
 }
@@ -309,6 +309,22 @@ img {
 .im6 {
     position:relative;
     bottom: 240px;
+}
+
+/*Skill section*/
+
+.skill-container {
+    background-color:#5c715e;
+    margin-top: 10px;
+}
+.skill-grid {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 400px;
+    background-color: #5c715e;
+    margin-top: 10px;
 }
 
 /*Media Query*/
