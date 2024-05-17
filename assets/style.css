@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    line-height: 30px;
     color: #222831;
 }
 
@@ -126,7 +127,7 @@ body {
 
 .logo-img {
     display: block;
-    width: 18vw;
+    width: 20vw;
     margin-left: 10vw;
     margin-bottom: 1vw;
     min-width: 100px;
@@ -136,50 +137,52 @@ body {
 
 
 .logo-img:hover {
-    width: 20vw;
+    width: 24vw;
 
 }
 
 .main {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     width: 100%;
     margin-top: 0.5vw;
     height: 100%;
     margin-bottom: 1px;
     background-color: #e3e3e3;
-    
-   
+
+
 }
 
 .des1,
 .des2,
 .des3 {
-    color:#5c715e;
+    color: #5c715e;
     font-size: 1rem;
     margin-bottom: 0;
-    
+
 }
 
 .des1 {
     text-align: end;
-    
+
 }
 
 .des2,
 .des3 {
     text-align: end;
 }
+
 .des3 {
-    display:block;
+    display: block;
     position: relative;
     bottom: 241px;
-    
+
 }
 
 h2 {
     display: block;
     text-align: center;
+    font-size: 30px;
 }
 
 
@@ -202,7 +205,8 @@ h2 {
 a {
     text-decoration: none;
     color: #f2f9f1;
-    font-size: 1.2rem;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 ul {
@@ -254,7 +258,7 @@ li:hover {
 .gallery-container {
 
     display: grid;
-    position:relative;
+    position: relative;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: start;
@@ -262,9 +266,9 @@ li:hover {
     margin-top: 1vw;
     width: 70vw;
     height: 490px;
-    
-    
-    
+
+
+
 }
 
 figure {
@@ -284,7 +288,7 @@ img {
 .im3 {
     position: relative;
     margin: auto;
-    right: 50px;
+    right: 30px;
     top: -250px;
     max-width: 240px;
     max-height: 240px;
@@ -293,39 +297,135 @@ img {
 }
 
 .im4 {
-    position:relative;
-    display:none;
+    position: relative;
+    display: none;
 
-    
-    
+
+
 }
 
 .im5 {
-    position:relative;
-    right:70px;
-    display:none;
+    position: relative;
+    right: 70px;
+    display: none;
 }
 
 .im6 {
-    position:relative;
+    position: relative;
     bottom: 240px;
 }
 
 /*Skill section*/
 
 .skill-container {
-    background-color:#5c715e;
-    margin-top: 10px;
-}
-.skill-grid {
-    position: static;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    height: 400px;
     background-color: #5c715e;
     margin-top: 10px;
 }
+
+.skill-grid {
+    position: static;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    background-color: #5c715e;
+    margin-top: 30px;
+}
+
+.skill-title {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: #e3e3e3;
+    font-size: 40px;
+    line-height: 30px;
+
+}
+
+h3 {
+    color: #e3e3e3;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+
+.cod-des {
+    margin-bottom: 0;
+    font-size: 20px;
+
+}
+
+.star {
+    display: inline-block;
+    width: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 4px;
+
+}
+
+.logorev {
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #222831;
+    transition: width 0.3s;
+    margin-right: 10px;
+    ;
+}
+
+.logorev:hover {
+    width: 80px;
+}
+
+.square2 {
+    align-content:center;
+}
+
+.but-des {
+    background-color:#e3e3e3;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border:none;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow: 3px 3px 2px #222831;
+    transition: all 0.2s;
+    font-weight: 200;
+    align-self: end;;
+    
+    
+}
+
+.but-des:hover {
+    padding-left: 75px;
+    padding-right: 75px;
+    color:#e3e3e3;
+    background-color: #222831;
+    opacity:0.8;
+
+}
+
+.but-des:active {
+    position:relative;
+    top: 3px;
+    left: 3px;
+    padding-left: 75px;
+    padding-right: 75px;
+    color:#e3e3e3;
+    background-color: #222831;
+    box-shadow: none;
+
+
+}
+
+
+
 
 /*Media Query*/
 
@@ -335,10 +435,10 @@ img {
         flex-direction: row;
     }
 
-.des1,
-.des2,
-.des3 {
-    
+    .des1,
+    .des2,
+    .des3 {
+
         margin-bottom: 0;
         font-size: 1.3rem;
     }
@@ -348,22 +448,22 @@ img {
     }
 
     .main {
-        display:block;
-        margin:auto;
+        display: block;
+        margin: auto;
     }
 
     .gallery-container {
         display: grid;
-        position:relative;
-        bottom:50px;
+        position: relative;
+        bottom: 50px;
         grid-template-columns: repeat(2, 350px);
         justify-content: center;
         align-content: start;
         column-gap: 0px;
         width: 70vw;
         height: 730px;
-        margin:auto;
-        
+        margin: auto;
+
 
     }
 
@@ -380,24 +480,24 @@ img {
 
 
     .im1 {
-        position:relative;
-        top:110px;
-        left:65px;
+        position: relative;
+        top: 110px;
+        left: 65px;
         max-height: 300px;
         max-width: 280px;
 
     }
 
     .des1 {
-        position:relative;
+        position: relative;
         text-align: start;
-        top:99px;
-        left:100px;
+        top: 99px;
+        left: 100px;
     }
 
     .im2 {
-        position:relative;
-        top:50px;
+        position: relative;
+        top: 50px;
         justify-content: end;
         align-self: center;
         max-height: 250px;
@@ -406,9 +506,9 @@ img {
     }
 
     .des2 {
-        position:relative;
-        top:25px;
-        left:-140px;
+        position: relative;
+        top: 25px;
+        left: -140px;
     }
 
 
@@ -425,27 +525,29 @@ img {
     }
 
     .im4 {
-        position:relative;
+        position: relative;
         top: 10px;
         right: 25px;
         max-height: 250px;
         max-width: 250px;
-        display:block; /*need due to "none" on mobile v.*/
-       
+        display: block;
+        /*need due to "none" on mobile v.*/
+
 
     }
 
     .im5 {
         position: relative;
-        left:10px;
-        bottom:325px;
+        left: 10px;
+        bottom: 325px;
         max-height: 250px;
         max-width: 250px;
-        display: block; /*need due to "none" on mobile v.*/
+        display: block;
+        /*need due to "none" on mobile v.*/
     }
 
     .im6 {
-        position:relative;
+        position: relative;
         justify-content: start;
         align-self: center;
         bottom: 180px;
@@ -453,10 +555,30 @@ img {
         max-height: 250px;
         max-width: 250px;
     }
-    
+
     .des3 {
-        position:relative;
-        bottom:205px;
+        position: relative;
+        bottom: 205px;
         right: 117px;
-}
+    }
+
+    /*Skills grid*/
+
+    .skill-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .cod-des {
+        text-align: center;
+    }
+
+    .square2 {
+        align-content:start;
+    }
+    .square3 {
+        padding-right: 110px;
+        padding-left: 40px;
+        
+    }
 }
