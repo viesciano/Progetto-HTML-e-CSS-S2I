@@ -145,17 +145,7 @@ body {
 
 }
 
-.main {
-    display: block;
-    margin: auto;
-    width: 100%;
-    margin-top: 0.5vw;
-    height: 100%;
-    margin-bottom: 1px;
-    background-color: #e3e3e3;
 
-
-}
 
 .des1,
 .des2,
@@ -499,7 +489,32 @@ h3 {
     border-radius: 0;
 }
 
+.but-deact {
 
+    background-color: #5c715e;
+    border: 2px solid #4a5a4b;
+    color: #4a5a4b;
+    width:fit-content;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: all 0.2s;
+    font-weight: 600;
+    align-self: end;
+    transition-timing-function: ease;
+
+
+}
+
+.but-deact:hover {
+    
+    color: #e3e3e3;
+    opacity:0.7;
+    
+}
 
 /*Media Query*/
 
@@ -587,7 +602,7 @@ h3 {
     .des2 {
         position: relative;
         top: 25px;
-        left: -140px;
+        left: 140px;
     }
 
 
@@ -641,7 +656,11 @@ h3 {
         right: 117px;
     }
 
-    /*Skills grid*/
+    /*Skills container & skills grid*/
+
+    .skill-container {
+        margin-top: 5px;
+    }
 
     .skill-grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -698,14 +717,22 @@ h3 {
     }
 
     .but-in-img {
+        font-size: 26px;
+        font-weight: 500;
         top: -720px;
         left: 380px;
         z-index: 4;
+        padding-left: 68px;
+        padding-right: 68px;
+        padding-top: 25px;
+        padding-bottom: 25px;;
+        transition: all 0.2s;
+        transition-timing-function: ease;
     }
 
     .but-in-img:hover {
-        padding-left: 75px;
-        padding-right: 75px;
+        padding-left: 85px;
+        padding-right: 85px;
         color: #e3e3e3;
         background-color: #222831;
     
@@ -717,11 +744,16 @@ h3 {
         color: #e3e3e3;
         top: -717px;
         left: 383px;
-        padding-left: 71px;
-        padding-right: 71px;
         color: #e3e3e3;
         background-color: #222831;
         box-shadow: none;
     
     }
+}
+@media screen and (min-width: 2400px) {
+
+    .skill-container {
+        margin-top: 100px;
+    }
+
 }
