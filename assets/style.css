@@ -8,6 +8,10 @@
     color: #222831;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Font General*/
 
 .poppins-thin {
@@ -156,6 +160,7 @@ body {
 .des1,
 .des2,
 .des3 {
+    position: relative;
     color: #5c715e;
     font-size: 1rem;
     margin-bottom: 0;
@@ -163,19 +168,24 @@ body {
 }
 
 .des1 {
-    text-align: end;
+    text-align: start;
+    top: -10px;
 
 }
 
-.des2,
-.des3 {
-    text-align: end;
+.des2 {
+    text-align: start;
+    bottom: 10px;
+
+
 }
 
 .des3 {
     display: block;
+    text-align: end;
     position: relative;
-    bottom: 241px;
+    bottom: 165px;
+
 
 }
 
@@ -203,10 +213,16 @@ h2 {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: #f2f9f1;
-    font-size: 22px;
     font-weight: 100;
+}
+
+.nav-li {
+    font-size: 20px;
+    font-weight: 400;
+
 }
 
 ul {
@@ -221,24 +237,21 @@ li {
     display: block;
     padding-right: 1vw;
     padding-left: 1vw;
-    transition-timing-function: ease;
     color: #f2f9f1;
     text-decoration: none;
 
 }
 
-.FL {
-    color: #f2f9f1;
-    font-size: 1.2rem;
-}
 
 li:hover {
     cursor: pointer;
 }
 
 .navbut {
-    width: 25vw;
-    padding: 2.5vw;
+    color: #e3e3e3;
+    font-weight: 500;
+    display: inline-block;
+    padding: 20px;
     background-color: #5c715e;
     border: none;
     transition-timing-function: ease;
@@ -253,6 +266,14 @@ li:hover {
     background-color: #222831;
 }
 
+.anchor {
+    /* Smooth scroll */
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
 /* Body-photos grid */
 
 .gallery-container {
@@ -260,14 +281,10 @@ li:hover {
     display: grid;
     position: relative;
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: start;
     margin: auto;
     margin-top: 1vw;
     width: 70vw;
     height: 490px;
-
-
 
 }
 
@@ -277,7 +294,7 @@ figure {
 }
 
 img {
-    display: grid;
+
     margin: auto;
     margin: 1vw;
     max-width: 200px;
@@ -288,20 +305,47 @@ img {
 .im3 {
     position: relative;
     margin: auto;
-    right: 30px;
+    right: -60px;
     top: -250px;
     max-width: 240px;
     max-height: 240px;
     z-index: 2;
+}
+
+.but-in-img {
+    position:relative;
+    top:-425px;
+    background-color: #FFDF2B;
+    margin:auto;
+    color: #222831;
+    margin-top: 20px;
+    width:fit-content;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow: 3px 3px 2px #222831;
+    transition: all 0.2s;
+    font-weight: 600;
+    align-self: end;
+    transition-timing-function: ease;
+
 
 }
+
+.but-in-img:hover {
+    padding-left: 75px;
+    padding-right: 75px;
+    color: #e3e3e3;
+    background-color: #222831;
+}
+
 
 .im4 {
     position: relative;
     display: none;
-
-
-
 }
 
 .im5 {
@@ -312,14 +356,14 @@ img {
 
 .im6 {
     position: relative;
-    bottom: 240px;
+    bottom: 155px;
 }
 
 /*Skill section*/
 
 .skill-container {
     background-color: #5c715e;
-    margin-top: 10px;
+    margin-top: 95px;
 }
 
 .skill-grid {
@@ -332,13 +376,14 @@ img {
     height: fit-content;
     background-color: #5c715e;
     margin-top: 30px;
+    row-gap: 50px;
 }
 
 .skill-title {
     padding-top: 25px;
     padding-bottom: 10px;
     color: #e3e3e3;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 30px;
 
 }
@@ -353,13 +398,21 @@ h3 {
 
 .cod-des {
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.sec-sch {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 15px;
 
 }
 
 .star {
     display: inline-block;
-    width: 10px;
+    width: 20px;
     margin-right: 0;
     margin-left: 0;
     padding-bottom: 4px;
@@ -381,49 +434,70 @@ h3 {
     width: 80px;
 }
 
+.logorev:active {
+    position: relative;
+    top: 3px;
+    left: 3px;
+
+}
+
 .square2 {
-    align-content:center;
+    align-content: center;
+}
+
+.square3 {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .but-des {
-    background-color:#e3e3e3;
+
+    background-color: #FFDF2B;
+    color: #222831;
     margin-top: 20px;
     padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border:none;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
     border-radius: 3px;
     font-size: 20px;
     box-shadow: 3px 3px 2px #222831;
     transition: all 0.2s;
-    font-weight: 200;
-    align-self: end;;
-    
-    
+    font-weight: 600;
+    align-self: end;
+    transition-timing-function: ease;
+
+
 }
 
 .but-des:hover {
     padding-left: 75px;
     padding-right: 75px;
-    color:#e3e3e3;
+    color: #e3e3e3;
     background-color: #222831;
-    opacity:0.8;
+
 
 }
 
 .but-des:active {
-    position:relative;
+    position: relative;
     top: 3px;
     left: 3px;
-    padding-left: 75px;
-    padding-right: 75px;
-    color:#e3e3e3;
+    padding-left: 71px;
+    padding-right: 71px;
+    color: #e3e3e3;
     background-color: #222831;
     box-shadow: none;
 
-
 }
 
+.icon-subj {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+}
 
 
 
@@ -445,6 +519,11 @@ h3 {
 
     .navbut {
         width: 15vw;
+    }
+
+    .nav-li {
+        font-size: 32px;
+        font-weight: 500;
     }
 
     .main {
@@ -475,7 +554,7 @@ h3 {
     }
 
     img {
-        border-radius: 6px;
+        border-radius: 5px;
     }
 
 
@@ -566,19 +645,83 @@ h3 {
 
     .skill-grid {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-bottom: 40px;
 
     }
 
     .cod-des {
         text-align: center;
+        font-size: 27px;
+
     }
 
     .square2 {
-        align-content:start;
+
+        align-content: start;
+        justify-content: start;
     }
+
     .square3 {
-        padding-right: 110px;
-        padding-left: 40px;
-        
+        padding-right: 20px;
+        padding-left: 20px;
+        align-content: start;
+        justify-content: start;
+
+
+    }
+
+    .icon-subj {
+        border-radius: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .star {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-title {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .sec-sch {
+        display: inline-block;
+        font-size: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .but-in-img {
+        top: -720px;
+        left: 380px;
+        z-index: 4;
+    }
+
+    .but-in-img:hover {
+        padding-left: 75px;
+        padding-right: 75px;
+        color: #e3e3e3;
+        background-color: #222831;
+    
+    
+    }
+    
+    .but-in-img:active {
+        position: relative;
+        color: #e3e3e3;
+        top: -717px;
+        left: 383px;
+        padding-left: 71px;
+        padding-right: 71px;
+        color: #e3e3e3;
+        background-color: #222831;
+        box-shadow: none;
+    
     }
 }

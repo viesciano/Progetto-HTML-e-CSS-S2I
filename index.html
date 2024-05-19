@@ -27,9 +27,9 @@
     <a href="index.html"><img class="logo-img" src="assets/img/logo_svg.svg" alt="Logo Simone Camilli"></a>
     <div class="navbar-top">
       <ul>
-        <li><button class="navbut"><a href="index.html">Home</a></button></li>
-        <li><button class="navbut"><a href="#">Bio</a></button></li>
-        <li><button class="navbut"><a href="#">Works</a></button></li>
+        <li><a class="nav-li" href="index.html"><button class="navbut">Home</button></a></li>
+        <li><a class="nav-li" href="#skills"><button class="navbut">Skills</button></a></li>
+        <li><a class="nav-li" href="#"><button class="navbut">Works</button></a></li>
 
       </ul>
 
@@ -51,6 +51,7 @@
       <figure>
         <img class="im3" src="assets/img/gridimg/selfr.png" alt="Me" />
       </figure>
+      
       <figure>
         <img class="im4" src="assets/img/gridimg/pcplant.jpg" alt="Plant near a pc" />
       </figure>
@@ -61,12 +62,15 @@
         <img class="im6" src="assets/img/gridimg/mic.jpg" alt="podcast station" />
         <p class="des3">PODCASTING & REVIEWING</p>
       </figure>
+      <button class="but-in-img">Let's talk!</button></div>
     </div>
 
-    <!--Bio & Section-->
+    
+
+    <!--Skills Section-->
 
     <div class="skill-container">
-      <h2 class="skill-title">Skills & Superpowers</h2>
+      <h2 class="skill-title"><a name="skills" class="anchor"></a>Skills & Superpowers</a></h2>
       <div class="skill-grid">
         <div class="square1">
           <h3>Coding</h3>
@@ -96,17 +100,21 @@
                 src="assets/img/icons/BRO.svg" alt="BRO logo"></a>
                 <a href="https://unile.academia.edu/SimoneAndreaCamilli" target="_blank"><img class="logorev"
                 src="assets/img/icons/Academia-logo-2021.svg.png" alt="Academia logo"></a></p>
-                <button class="but-des">Let's talk!</button>
+                <p><button class="but-des">Let's talk!</button></p>
         </div>
         <div class="square3">
           <h3>Teaching</h3>
-          <p class="cod-des">Tenured teacher in secondary schools</p>
-          <p class="cod-des"></p>
+          <p class="cod-des">Tenured teacher <br> <span class="sec-sch">secondary schools</span></p>
+          <p class="cod-des">ITA <img class="icon-subj" src="assets/img/icons/ita.svg" alt="italian literature logo"></p>
+          <p class="cod-des">HIS <img class="icon-subj " src="assets/img/icons/history.svg" alt="history logo"></p>
+          <p class="cod-des">GEO <img class="icon-subj" src="assets/img/icons/geo.svg" alt="geo logo"></p>
+          
         </div>
       </div>
     </div>
 
   </div>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
