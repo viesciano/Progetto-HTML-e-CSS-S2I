@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Font General*/
+/* Font */
 
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -122,29 +122,62 @@ html {
     font-style: italic;
 }
 
-/*Body*/
+/* Body */
 
 body {
     background-color: #e3e3e3;
     color: #222831;
+    overflow-x: hidden;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.social-icon {
+    display: inline-block;
+    right: 30px;
+    top: 0px;
+    border-radius: 0px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    width: 4vw;
+    height: 4vw;
+    max-width: 50px;
+    max-height: 50px;
+    transition: all 0.2s;
+}
+
+.social-icon:hover {
+
+    width: 5vw;
+    max-width: 55px;
+    max-height: 50px;
+    
 }
 
 .logo-img {
-    display: block;
-    width: 20vw;
-    margin-left: 10vw;
+    position:absolute;
+    width: 16vw;
+    margin-left: 1vw;
+    top: 1px;
     margin-bottom: 1vw;
     min-width: 100px;
-    transition: width 0.3s;
+    max-width: 450px;
+    border-radius: 0;
+    transition: width 0.2s;
 
 }
-
 
 .logo-img:hover {
-    width: 24vw;
+    width: 18vw;
 
 }
-
 
 
 .des1,
@@ -199,18 +232,17 @@ h2 {
     z-index: 999;
     margin-bottom: 1vw;
     justify-content: center;
-    box-shadow: 0px 1px 4px 0px #222831;
+    box-shadow: 0px 1px 2px 0px #222831;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
     color: #f2f9f1;
-    font-weight: 100;
 }
 
 .nav-li {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 
 }
@@ -241,19 +273,22 @@ li:hover {
     color: #e3e3e3;
     font-weight: 500;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background-color: #5c715e;
     border: none;
     transition-timing-function: ease;
-    transition: background-color 0.3s;
+    transition: all 0.2s;
     border-bottom: #222831;
     border-bottom-left-radius: 2px;
     border-bottom-left-radius: 2px;
+    
 
 }
 
 .navbut:hover {
-    background-color: #222831;
+    color: #222831;
+    
+
 }
 
 .anchor {
@@ -263,6 +298,8 @@ li:hover {
     top: -90px;
     visibility: hidden;
 }
+
+
 
 /* Body-photos grid */
 
@@ -275,7 +312,7 @@ li:hover {
     margin-top: 1vw;
     width: 70vw;
     height: 490px;
-
+    
 }
 
 figure {
@@ -285,7 +322,6 @@ figure {
 
 img {
 
-    margin: auto;
     margin: 1vw;
     max-width: 200px;
     max-height: 200px;
@@ -311,13 +347,17 @@ img {
     margin-top: 20px;
     width:fit-content;
     padding: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
     border: none;
     border-radius: 3px;
     font-size: 20px;
-    box-shadow: 3px 3px 2px #222831;
+    box-shadow: 2px 3px 2px #222831;
     transition: all 0.2s;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 105px;
+    border-top-left-radius: 105px;
     font-weight: 600;
     align-self: end;
     transition-timing-function: ease;
@@ -326,10 +366,22 @@ img {
 }
 
 .but-in-img:hover {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #e3e3e3;
     background-color: #222831;
+    
+}
+
+.but-in-img:active {
+    position: relative;
+    top: -422px;
+    left: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #e3e3e3;
+    background-color: #222831;
+    box-shadow: none;
 }
 
 
@@ -366,7 +418,8 @@ img {
     height: fit-content;
     background-color: #5c715e;
     margin-top: 30px;
-    row-gap: 50px;
+    row-gap: 0px;
+    
 }
 
 .skill-title {
@@ -381,7 +434,7 @@ img {
 h3 {
     color: #e3e3e3;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: px;
     font-size: 25px;
 }
 
@@ -428,17 +481,18 @@ h3 {
     position: relative;
     top: 3px;
     left: 3px;
-
 }
 
 .square2 {
-    align-content: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
 }
 
+
 .square3 {
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    padding-bottom: 20px;
 }
 
 .but-des {
@@ -447,8 +501,8 @@ h3 {
     color: #222831;
     margin-top: 20px;
     padding: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
     border: none;
     border-radius: 3px;
     font-size: 20px;
@@ -457,13 +511,11 @@ h3 {
     font-weight: 600;
     align-self: end;
     transition-timing-function: ease;
-
-
 }
 
 .but-des:hover {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 65px;
+    padding-right: 65px;
     color: #e3e3e3;
     background-color: #222831;
 
@@ -515,6 +567,120 @@ h3 {
     opacity:0.7;
     
 }
+/* Bio section */
+
+.bio-container {
+    display:flex;
+    background-color: #e3e3e3;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    
+}
+
+.biography {
+    margin-top: 15px;
+    color: #50545C;
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    column-count: 1;
+    column-gap: 25px;
+    line-height: 27px;
+    font-size: 27px;
+}
+
+.bio-title {
+
+color: #5c715e;
+font-size: 30px;
+line-height: 30px;
+}
+
+.bio-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bio-img {
+    width:80vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:auto;
+    height:auto;
+    max-width: 550px;
+    max-height: 600px;
+}
+
+.bio-timeline-title {
+    background-color: #5c715e;
+    color:#e3e3e3;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.bio-timeline-grid {
+    display:flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3(repeat, 1fr);
+    width: 100%;
+    background-color: #5c715e;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.education1,
+.education2,
+.education3 {
+    display:flex;
+    justify-content:start;
+    padding-right: 20px;
+    width:100%;
+    border-left: 4px solid #e3e3e3;
+    border-radius: 10px;
+    height:fit-content;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.time-title {
+    
+    display:inline-block;
+    font-size: 22px;
+    color: #e3e3e3;
+    font-weight: 600;
+    
+}
+
+.bio-logo {
+    display:flex;
+    width:20px;
+
+}
+
+/*Form page*/
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+    width: 85vw;
+    max-width:600px;
+    padding-left:50px;
+    padding-right:50px;
+    justify-content: center;
+    margin: auto;
+}
+
 
 /*Media Query*/
 
@@ -544,6 +710,8 @@ h3 {
     .main {
         display: block;
         margin: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
     }
 
     .gallery-container {
@@ -682,11 +850,13 @@ h3 {
     }
 
     .square3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         padding-right: 20px;
         padding-left: 20px;
-        align-content: start;
-        justify-content: start;
-
+    
 
     }
 
@@ -702,6 +872,10 @@ h3 {
     }
 
     .skill-title {
+        font-size: 50px;
+    }
+
+    .bio-title {
         font-size: 50px;
     }
 
@@ -723,6 +897,10 @@ h3 {
         left: 380px;
         z-index: 4;
         padding-left: 68px;
+        border-bottom-right-radius: 90px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 125px;
+        border-top-right-radius: 105px;
         padding-right: 68px;
         padding-top: 25px;
         padding-bottom: 25px;;
@@ -749,11 +927,50 @@ h3 {
         box-shadow: none;
     
     }
+
+    .bio-container {
+        
+        flex-direction: column;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 50px;
+        width: 100%;
+        
+    }
+    /*Bio - About me*/
+
+    .bio-timeline-grid {
+        display:flex;
+        flex-direction: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3(repeat, 1fr);
+        width: 100%;
+        background-color: #5c715e;
+        justify-content: end;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bio-timeline-title {
+        font-size: 50px;
+    }
+
+    .education3{
+        justify-content: space-between;
+    }
+
+    .education1,
+    .education2,
+    .education3 {
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 2400px) {
 
     .skill-container {
-        margin-top: 100px;
+        margin-top: 95px;
     }
+
+
 
 }
