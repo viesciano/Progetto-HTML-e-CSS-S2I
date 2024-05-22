@@ -526,8 +526,6 @@ h3 {
     position: relative;
     top: 3px;
     left: 3px;
-    padding-left: 71px;
-    padding-right: 71px;
     color: #e3e3e3;
     background-color: #222831;
     box-shadow: none;
@@ -668,7 +666,7 @@ line-height: 30px;
 
 }
 
-/*Form page*/
+/*contact me! page*/
 
 .form-container {
     display:flex;
@@ -677,10 +675,78 @@ line-height: 30px;
     max-width:600px;
     padding-left:50px;
     padding-right:50px;
+    border-radius: 6px;
     justify-content: center;
     margin: auto;
+    background-color: #5c715e;
+    padding-bottom:100px;
+    padding-top:30px;
+    margin-bottom:70px;
 }
 
+.form-title {
+    color:#e3e3e3;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+label,
+input,
+select,
+textarea {
+    font-size: 22px;
+    color: #e3e3e3;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+input,
+select,
+textarea {
+    background-color: #e3e3e3;
+    color:#222831
+}
+
+::placeholder {
+    color:#5c715e;
+    opacity:0.7;
+}
+
+.sub-but {
+        background-color: #FFDF2B;
+        color: #222831;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: none;
+        border-radius: 3px;
+        font-size: 20px;
+        box-shadow: 3px 3px 2px #222831;
+        transition: all 0.2s;
+        font-weight: 600;
+        align-self: center;
+        transition-timing-function: ease;
+    }
+    
+    .sub-but:hover {
+        padding-left: 65px;
+        padding-right: 65px;
+        color: #e3e3e3;
+        background-color: #222831;
+    
+    }
+    
+    .sub-but:active {
+        
+        top: 3px;
+        left: 3px;
+        color: #e3e3e3;
+        background-color: #222831;
+        box-shadow: none;
+    
+    }
 
 /*Media Query*/
 
@@ -963,6 +1029,48 @@ line-height: 30px;
     .education2,
     .education3 {
         font-size: 20px;
+    }
+
+    /*contact me! page*/
+
+    .form-title {
+        font-size: 50px;
+        
+    }
+    .sub-but {
+        background-color: #FFDF2B;
+        color: #222831;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
+        border: none;
+        border-radius: 3px;
+        font-size: 20px;
+        box-shadow: 3px 3px 2px #222831;
+        transition: all 0.2s;
+        font-weight: 600;
+        align-self: center;
+        transition-timing-function: ease;
+    }
+    
+    .sub-but:hover {
+        padding-left: 165px;
+        padding-right: 165px;
+        color: #e3e3e3;
+        background-color: #222831;
+    
+    
+    }
+    
+    .sub-but:active {
+        
+        top: 3px;
+        left: 3px;
+        color: #e3e3e3;
+        background-color: #222831;
+        box-shadow: none;
+    
     }
 }
 @media screen and (min-width: 2400px) {

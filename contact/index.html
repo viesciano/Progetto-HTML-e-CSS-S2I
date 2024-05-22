@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SC Portfolio</title>
+    <title>SC | Contact me!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -39,17 +39,19 @@
 
     <!-- Form section -->
 
+
     <form action="inserimento_dati.php" method="post">
+
         <div class="form-container">
             <h2 class="form-title">Contact me!</h2>
-            <label for="First-Name">First Name</label>
-            <input type="text" name="First-Name">
-            <label for="Last-Name">Last Name</label>
-            <input type="text" name="Last-Name">
-            <label for="date">Date of birth</label>
-            <input type="date">
-            <label for="email">Email address</label>
-            <input type="email">
+            <label for="First-Name">First Name *</label>
+            <input type="text" name="First-Name" >
+            <label for="Last-Name">Last Name *</label>
+            <input type="text" name="Last-Name" >
+            <label for="date">Date of birth *</label>
+            <input type="date" >
+            <label for="email">Email address *</label>
+            <input type="email" placeholder="youremail@example.com" >
             
             <label for="topic">Choose the topic</label>
             <select name="topic">
@@ -58,9 +60,11 @@
                 <option value="re">Reviewing</option>
                 <option value="po">Podcasting</option>
             </select>
-        <label for="textarea">How could I help you?</label>
+        <label for="textarea">How can I help you? *</label>
         <textarea name="textarea"></textarea><br>
-        <input type="submit">
+        <label>*Required fields</label><br>
+        <input class="sub-but" type="submit">
+
         </div>
         
     </form>
