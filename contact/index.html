@@ -13,7 +13,7 @@
     <meta name="author" content="Simone Camilli">
 
     <meta property="og:site-name" content="Simone Camilli" />
-    <meta property=“og:title” content="Simone Camilli's Website & Portfolio"/>
+    <meta property=“og:title” content="Simone Camilli's Website & Portfolio" />
     <meta property="og:url" content="https://simonecamilli.it">
     <meta property="og:description" content="Personal website about coding" />
     <meta property="og:type" content="website" />
@@ -37,18 +37,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "9HpSbh5_fCHTa8pPd",
-      });
-   })();
-</script>
-<script src="../contact/script.js"></script>
+
 
 </head>
 
@@ -69,36 +58,30 @@
     </div>
 
     <!-- Form section -->
+    
+    <form action="https://formsubmit.co/mailmaperprova@gmail.com" method="POST">
+    <div class="form-container">
+        <h2 class="form-title">Contact me!</h2>
+        <label for="First-Name">First Name *</label>
+        <input type="text" id="First-name" name="First-Name" required>
+        <label for="Last-Name">Last Name *</label>
+        <input type="text" id="Last-name" name="Last-Name" required>
+        <label for="date">Date of birth *</label>
+        <input type="date" id="date" name="date" required>
+        <label for="email">Email address *</label>
+        <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
 
-
-    <form action="inserimento_dati.php" method="post">
-
-        <div class="form-container">
-            <h2 class="form-title">Contact me!</h2>
-            <label for="First-Name">First Name *</label>
-            <input type="text" name="First-Name" required>
-            <label for="Last-Name">Last Name *</label>
-            <input type="text" name="Last-Name" required>
-            <label for="date">Date of birth *</label>
-            <input type="date" required>
-            <label for="email">Email address *</label>
-            <input type="email" placeholder="youremail@example.com" required>
-            
-            <label for="topic">Choose the topic</label>
-            <select name="topic">
-                <option value="">Topic</option>
-                <option value="co">Coding</option>
-                <option value="re">Reviewing</option>
-                <option value="po">Podcasting</option>
-            </select>
+        <label for="topic">Choose the topic</label>
+        <select name="topic">
+            <option value="">Topic</option>
+            <option value="co">Coding</option>
+            <option value="re">Reviewing</option>
+            <option value="po">Podcasting</option>
+        </select>
         <label for="textarea">How can I help you? *</label>
         <textarea name="textarea"></textarea><br>
         <label>*Required fields</label><br>
-        <input class="sub-but" type="submit" onclick="sendMail() ">
-        
-
-        </div>
-        
+        <button class="but-des" type="submit">Send</button>
     </form>
 
 
