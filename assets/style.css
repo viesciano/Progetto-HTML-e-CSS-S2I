@@ -763,6 +763,34 @@ textarea {
     
     }
 
+/*Footer*/
+
+.footer-elements {
+    display:flex;
+    flex-direction: column;
+    column-count: 1;
+    background-color: #50545C;
+    height:fit-content;
+}
+
+.footer-li {
+    height:100%;
+    padding: 10px 10px;
+    color: #e3e3e3;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+    
+}
+
+.footer-li:hover {
+    color: #e3e3e3;
+    text-decoration: underline 2px solid #e3e3e3;
+
+    
+    
+}
+
 /*Media Query*/
 
 @media screen and (min-width: 678px) {
@@ -1062,6 +1090,13 @@ font-size: 26px;
         font-size: 20px;
     }
 
+    /*Footer*/
+    .footer-elements {
+    flex-direction: row;
+    }
+
+   
+
     /*contact me! page*/
 
     .form-title {
@@ -1103,6 +1138,8 @@ font-size: 26px;
         box-shadow: none;
     
     }
+
+
 }
 @media screen and (min-width: 2400px) {
 
